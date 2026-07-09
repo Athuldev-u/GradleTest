@@ -18,7 +18,7 @@ val extentAdapterVersion = "1.14.0"
 val slf4jVersion = "2.0.17"
 val flywayVersion = "10.22.0"
 val mysqlVersion = "8.0.33"
-val testcontainersVersion = "2.0.5"
+val testcontainersVersion = "1.21.3"
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(22))
@@ -50,8 +50,8 @@ dependencies {
     testImplementation(
         "tech.grasshopper:extentreports-cucumber7-adapter:$extentAdapterVersion"
     )
-    testImplementation("org.testcontainers:testcontainers-junit-jupiter:$testcontainersVersion")
-    testImplementation("org.testcontainers:testcontainers-mysql:$testcontainersVersion")
+    testImplementation("org.testcontainers:testcontainers-junit-jupiter")
+    testImplementation("org.testcontainers:testcontainers-mysql")
     testImplementation("org.flywaydb:flyway-core:$flywayVersion")
     testImplementation("org.flywaydb:flyway-mysql:$flywayVersion")
     testImplementation("org.slf4j:slf4j-simple:$slf4jVersion")
