@@ -28,7 +28,7 @@ java {
 dependencies {
 
     testImplementation("org.seleniumhq.selenium:selenium-java:$seleniumVersion")
-    testImplementation("com.mysql:mysql-connector-j:${mysqlVersion}")
+    testImplementation("com.mysql:mysql-connector-j:$mysqlVersion")
 
     testImplementation(platform("org.junit:junit-bom:$junitVersion"))
     testImplementation("org.junit.jupiter:junit-jupiter")
@@ -50,12 +50,10 @@ dependencies {
     testImplementation(
         "tech.grasshopper:extentreports-cucumber7-adapter:$extentAdapterVersion"
     )
-    testImplementation("org.testcontainers:testcontainers-junit-jupiter:${testcontainersVersion}")
-    testImplementation("org.testcontainers:testcontainers-mysql:${testcontainersVersion}")
-    testImplementation("org.flywaydb:flyway-core:${flywayVersion}")
-    testImplementation("org.flywaydb:flyway-mysql:${flywayVersion}")
-    testImplementation("org.flywaydb:flyway-core:${flywayVersion}")
-    testImplementation("org.flywaydb:flyway-mysql:${flywayVersion}")
+    testImplementation("org.testcontainers:testcontainers-junit-jupiter:$testcontainersVersion")
+    testImplementation("org.testcontainers:testcontainers-mysql:$testcontainersVersion")
+    testImplementation("org.flywaydb:flyway-core:$flywayVersion")
+    testImplementation("org.flywaydb:flyway-mysql:$flywayVersion")
     testImplementation("org.slf4j:slf4j-simple:$slf4jVersion")
 }
 
