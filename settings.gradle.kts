@@ -1,1 +1,1 @@
-rootProject.name = "gradleday3"
+rootProject.name = "GradleTest"

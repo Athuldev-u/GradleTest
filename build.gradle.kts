@@ -17,8 +17,8 @@ val extentVersion = "5.1.2"
 val extentAdapterVersion = "1.14.0"
 val slf4jVersion = "2.0.17"
 val flywayVersion = "10.22.0"
-val mysqlVersion = "9.0.0"
-val testcontainersVersion = "1.21.3"
+val mysqlVersion = "8.0.33"
+val testcontainersVersion = "2.0.5"
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(22))
