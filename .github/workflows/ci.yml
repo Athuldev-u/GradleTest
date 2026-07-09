@@ -15,18 +15,15 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '22'
-          cache: 'maven'
+          cache: 'gradle'
 
       - name: 3. Start Docker
-        working-directory: gradlerepo
         run: |
           docker compose -f src/test/resources/docker/docker-compose.testcontainer.yml down -v
           docker compose -f src/test/resources/docker/docker-compose.testcontainer.yml up -d --wait
 
       - name: 4. Grant execute permission
-        working-directory: gradlerepo
         run: chmod +x gradlew
-
 
       - name: 5. Run Tests
         run: ./gradlew test --tests "com.gradleproject.data.OrderTestIT"
