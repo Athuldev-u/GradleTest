@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 @Epic("Framework Hardening")
 @Feature("Reporting Insights")
-@Owner("Lahari")
+@Owner("athul")
 public class ReportingInsightsTest {
     @Test
     @Story("Categories")
