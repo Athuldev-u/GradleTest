@@ -100,3 +100,4 @@ tasks.test {
     useJUnitPlatform()
     maxParallelForks = 1
 }
+
