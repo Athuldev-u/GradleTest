@@ -1,0 +1,20 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","49","flywaySeedsReferenceDataButNoPerTestOrders()","","2026-07-10","passed","2026-07-10","","com.ust.sdet.selenium.data.OrdersDataIT","com.ust.sdet.selenium.data.OrdersDataIT","flywaySeedsReferenceDataButNoPerTestOrders"
+"    As a shipper
+    i want to find product,add them to my cart,and complete an order
+    So that the retail purchase journey is shared language","4672","A fresh cart is empty","","2026-07-08","passed","2026-07-08","","Catalog checkout","A fresh cart is empty",""
+"","79","resetMakesTestsOrderIndependent()","","2026-07-10","broken","2026-07-10","","com.ust.sdet.selenium.data.OrdersDataIT","com.ust.sdet.selenium.data.OrdersDataIT","resetMakesTestsOrderIndependent"
+"    As a shipper
+    i want to find product,add them to my cart,and complete an order
+    So that the retail purchase journey is shared language","5267","Buy ""lamp"" end to end","","2026-07-08","passed","2026-07-08","","Catalog checkout","Buy ""lamp"" end to end",""
+"    As a shipper
+    i want to find product,add them to my cart,and complete an order
+    So that the retail purchase journey is shared language","5763","Buy ""headphones"" end to end","","2026-07-08","passed","2026-07-08","","Catalog checkout","Buy ""headphones"" end to end",""
+"","34","countsOnlyThisTestsOrders()","","2026-07-10","broken","2026-07-10","","com.ust.sdet.selenium.data.OrdersDataIT","com.ust.sdet.selenium.data.OrdersDataIT","countsOnlyThisTestsOrders"
+"    As a shipper
+    i want to find product,add them to my cart,and complete an order
+    So that the retail purchase journey is shared language","6018","Buy a single product end to end","","2026-07-08","passed","2026-07-08","","Catalog checkout","Buy a single product end to end",""
+"","35","factoryPersistsBuilderDataAgainstIsolatedMySql()","","2026-07-10","broken","2026-07-10","","com.ust.sdet.selenium.data.OrdersDataIT","com.ust.sdet.selenium.data.OrdersDataIT","factoryPersistsBuilderDataAgainstIsolatedMySql"
+"    As a shipper
+    i want to find product,add them to my cart,and complete an order
+    So that the retail purchase journey is shared language","5337","Buy ""shoes"" end to end","","2026-07-08","passed","2026-07-08","","Catalog checkout","Buy ""shoes"" end to end",""
