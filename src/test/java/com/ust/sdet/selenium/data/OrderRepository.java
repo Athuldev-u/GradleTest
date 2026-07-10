@@ -30,7 +30,7 @@ public class OrderRepository {
                 long orderId;
                 try (PreparedStatement orderStatement =
                              connection.prepareStatement(orderSql, Statement.RETURN_GENERATED_KEYS)) {
-                    orderStatement.setString(2, order.status());
+                    orderStatement.setString(1, order.status());
                     orderStatement.setLong(2, order.totalPaise());
                     orderStatement.setDate(3, Date.valueOf(order.orderedOn()));
                     orderStatement.setBoolean(4, order.refunded());
