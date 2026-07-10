@@ -17,11 +17,11 @@ public class OrderRepository {
     }
     public long save(Order order) {
         String orderSql = """
-                INSERT INTO retail_orders(status, total_paise, ordered_on, refunded)
+                INSERT INTO retail_orders(status, price, date_on, refunded)
                 VALUES (?, ?, ?, ?)
                 """;
         String itemSql = """
-                INSERT INTO retail_order_items(order_id, sku, quantity)
+                INSERT INTO retail_order_items(order_id, name, quantity)
                 VALUES (?, ?, ?)
                 """;
         try (Connection connection = connection()) {
@@ -30,7 +30,7 @@ public class OrderRepository {
                 long orderId;
                 try (PreparedStatement orderStatement =
                              connection.prepareStatement(orderSql, Statement.RETURN_GENERATED_KEYS)) {
-                    orderStatement.setString(1, order.status());
+                    orderStatement.setString(2, order.status());
                     orderStatement.setLong(2, order.totalPaise());
                     orderStatement.setDate(3, Date.valueOf(order.orderedOn()));
                     orderStatement.setBoolean(4, order.refunded());
