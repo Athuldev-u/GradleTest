@@ -102,7 +102,7 @@ tasks.withType<Test>().configureEach {
 //}
 tasks.test {
     description = "Run the tests"
-    include("**/AllureReporting.class")
+    include("**/ReportingInsightsTest.class")
     include("**/OrderTestIT.class")
     useJUnitPlatform()
     maxParallelForks = 1
