@@ -47,6 +47,9 @@ dependencies {
     testImplementation("org.flywaydb:flyway-core:$flywayVersion")
     testImplementation("org.flywaydb:flyway-mysql:$flywayVersion")
     testImplementation("mysql:mysql-connector-java:$mysqlLibVersion")
+    testImplementation(platform("io.qameta.allure:allure-bom:2.29.1"))
+    testImplementation("io.qameta.allure:allure-junit5")
+    testImplementation("io.qameta.allure:allure-cucumber7-jvm")
 }
 
 tasks.withType<JavaCompile>().configureEach {
@@ -76,6 +79,10 @@ tasks.withType<Test>().configureEach {
             .orElse("chrome")
             .get()
     )
+    systemProperty(
+        "allure.results.directory",
+        layout.buildDirectory.dir("allure-results").get().asFile.absolutePath
+    )
 
     systemProperty("cucumber.publish.quiet", "true")
 
@@ -86,7 +93,7 @@ tasks.withType<Test>().configureEach {
 
 tasks.test {
     description = "Run the test"
-    include("**/OrdersDataIT.class")
     include("**/ReportingInsightsTest.class")
+    include("**/OrdersDataIT.class")
     maxParallelForks = 1
 }

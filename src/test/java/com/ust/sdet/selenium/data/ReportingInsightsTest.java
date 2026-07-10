@@ -1,4 +1,4 @@
-package com.ust.sdet.selenium.test;
+package com.ust.sdet.selenium.data;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 @Epic("Framework Hardening")
 @Feature("Reporting Insights")
-@Owner("Lahari")
+@Owner("athul")
 public class ReportingInsightsTest {
     @Test
     @Story("Categories")
