@@ -111,7 +111,7 @@ public class OrdersDataIT {
 
                 anOrder()
 
-                        .withQuantity(3)
+                        .withQuantity(6)
 
         );
 
