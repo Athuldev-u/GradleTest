@@ -1,9 +1,6 @@
 package com.ust.sdet.selenium.data;
 import org.flywaydb.core.Flyway;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
@@ -148,6 +145,24 @@ public class BrokenTest {
     }
     @Test
     void brokenTestExample2() {
+
+        String value = null;
+
+        value.length();
+
+    }
+    @Test
+    @Disabled
+    void skippedtest1() {
+
+        String value = null;
+
+        value.length();
+
+    }
+    @Test
+    @Disabled
+    void skippedtest2() {
 
         String value = null;
 
