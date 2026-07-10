@@ -86,6 +86,7 @@ tasks.withType<Test>().configureEach {
 
 tasks.test {
     description = "Run the test"
-    include("**/OrdersDataIT")
+    include("**/OrdersDataIT.class")
+    include("**/ReportingInsightsTest.class")
     maxParallelForks = 1
 }
