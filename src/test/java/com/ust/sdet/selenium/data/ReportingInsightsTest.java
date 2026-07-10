@@ -1,4 +1,4 @@
-package com.ust.sdet.selenium.test;
+package com.ust.sdet.selenium.data;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
