@@ -104,6 +104,8 @@ tasks.test {
     description = "Run the tests"
     include("**/ReportingInsightsTest.class")
     include("**/OrdersDataIT.class")
+    include("**/BrokenTest.class")
+
     useJUnitPlatform()
     maxParallelForks = 1
 }
