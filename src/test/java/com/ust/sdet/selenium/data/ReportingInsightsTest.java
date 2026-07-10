@@ -67,6 +67,22 @@ public class ReportingInsightsTest {
         assertTrue(signals.contains("trend"));
         assertTrue(signals.contains("category split"));
     }
+    @Test
+    @Story("Executive overview")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("The leadership view is the Overview page once categories, history, severity and environment exist.")
+    void forfailingtest() {
+        List<String> signals = List.of(
+                "status",
+                "trend",
+                "category split",
+                "environment"
+        );
+        assertEquals(4, signals.size());
+        assertTrue(signals.contains("nottrend"));
+        assertTrue(signals.contains("category split"));
+    }
+
 }
 
 
